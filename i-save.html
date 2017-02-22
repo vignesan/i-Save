@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>i-Save - by Vignesan Selvam</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/leaflet.css" />
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body,
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<script src="./js/leaflet.js"></script>
+
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map', {
+            dragging: true
+        }).setView([11.6643, 78.1460], 7);
+        L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            minZoom: 7,
+            maxZoom: 19,
+            noWrap: true,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> | Developer' + '<a href="https://github.com/vignesan"> Vignesan</a> '
+        }).addTo(map);
+    </script>
+</body>
+
+
+
+
+
+
+</html>
